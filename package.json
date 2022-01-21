@@ -1,0 +1,27 @@
+{
+  "name": "realizm-bot-beta",
+  "version": "1.0.0",
+  "description": "BETA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RealismModz/Realizm-Bot-Beta.git"
+  },
+  "keywords": [
+    "BETA"
+  ],
+  "author": "RealizmModz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RealismModz/Realizm-Bot-Beta/issues"
+  },
+  "homepage": "https://github.com/RealismModz/Realizm-Bot-Beta#readme",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "discord.js": "^13.6.0",
+    "dotenv": "^14.2.0"
+  }
+}
