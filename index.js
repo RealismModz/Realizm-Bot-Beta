@@ -1,7 +1,7 @@
 const discord = require('discord.js')
 const { Client, Collection } = require("discord.js");
 const path = require('path');
-const db = require('mongoose');
+const mongoose = require('mongoose');
 const fs = require('fs')
 const ee = require("./settings/embed.json");
 const dotenv = require('dotenv');
@@ -34,6 +34,13 @@ client.categories = fs.readdirSync("./commands/");;
     require(`./handlers/${handler}`)(client)
 });
 
-
+mongoose.connect(process.env.MONGODB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => {
+    console.log('Connected to DB!');
+}).catch((err) => {
+    console.log(err);
+});
 
 client.login(process.env.TOKEN)
